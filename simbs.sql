@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Des 2025 pada 01.39
+-- Waktu pembuatan: 04 Des 2025 pada 06.02
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -44,7 +44,9 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id_buku`, `judul`, `penulis`, `halaman`, `tahun_terbit`, `penerbit`, `gambar`, `kategori`, `genre`) VALUES
-(1, 're', 'r', 1, 1, 'e', 're.jpg', '', 'romance');
+(2, 'The Tokyo Zodiac Murders', 'Soji Shimada', 360, 2020, 'Gramedia ', 'The Tokyo Zodiac Murders.png', '', 'Thriller'),
+(3, 'Hujan', 'Tereliye', 320, 2022, 'Penerbit Sabak Grip', 'Hujan.png', '', 'romance'),
+(4, 'Clean Code', 'Robert C. Martin', 431, 2008, 'Prentice Hall', 'Clean Code.png', '', 'Informatika');
 
 -- --------------------------------------------------------
 
@@ -93,7 +95,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `id_buku` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_buku` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
